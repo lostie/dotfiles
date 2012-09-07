@@ -1,0 +1,7 @@
+[user]
+	name = Sergio Marques
+	email = sergio.rtmarques@gmail.com
+[core]
+	excludesfile = /Users/smarques/.gitignore_global
+[color]
+	ui = true
