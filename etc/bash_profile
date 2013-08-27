@@ -1,9 +1,9 @@
 alias ll='ls -l'
 alias tailf='tail -f'
 
-# 
+#
 # GIT
-# 
+#
 alias gc="git commit -m $1"
 alias gca="git add -A; git commit -m $1"
 alias gs='git status'
@@ -17,17 +17,17 @@ alias gp='git push'
 alias gpl='git pull'
 alias gpom="git pull origin master"
 
-##
-## SSH alias
-alias opapi1='ssh operator-api-1'
-alias opapi2='ssh operator-api-2'
+# DOS2UNIX
+alias dos2unix="python -c \"import sys; import fileinput; sys.stdout.writelines(line.replace('\r', '\n') for line in fileinput.input(mode='rU'))\""
 
 ulimit -n 4096
 
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 
-export PATH=/usr/local/bin:$PATH
+export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:$PATH
+
+
 # Set Clang as the default compiler for the system
 #export CC=clang
 #export CFLAGS=-Qunused-arguments
