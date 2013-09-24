@@ -25,9 +25,6 @@ ulimit -n 4096
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 
-export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:$PATH
-
-
 # Set Clang as the default compiler for the system
 #export CC=clang
 #export CFLAGS=-Qunused-arguments
@@ -35,3 +32,5 @@ export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:$PATH
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # This loads RVM into a shell session.
 PATH=$PATH:$HOME/.rvm/bin
+
+export PATH=/usr/local/bin:/usr/local/sbin:/Users/smarques/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/share/npm/bin
