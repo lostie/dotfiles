@@ -11,6 +11,8 @@ Bundle 'oscarh/vimerl'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'nanotech/jellybeans.vim'
+Bundle 'dsawardekar/ember.vim'
+Bundle 'derekwyatt/vim-scala'
 
 colorscheme jellybeans
 
