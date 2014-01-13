@@ -5,3 +5,7 @@
 	excludesfile = /Users/smarques/.gitignore_global
 [color]
 	ui = true
+[push]
+	default = simple
+[github]
+  user = lostie
