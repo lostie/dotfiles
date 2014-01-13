@@ -25,6 +25,7 @@ set nobackup
 set nowritebackup
 set noswapfile
 set autoread
+set hlsearch
 
 set tabstop=2
 set softtabstop=2
@@ -33,6 +34,8 @@ set expandtab
 
 if has("gui_running")
 	set guioptions=egmrLt
+else
+  set background=dark
 endif
 
 filetype plugin indent on
