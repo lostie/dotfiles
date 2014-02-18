@@ -13,6 +13,8 @@ Bundle 'tomtom/tcomment_vim'
 Bundle 'nanotech/jellybeans.vim'
 Bundle 'dsawardekar/ember.vim'
 Bundle 'derekwyatt/vim-scala'
+Bundle 'thoughtbot/vim-rspec'
+Bundle 'tpope/vim-dispatch'
 
 colorscheme jellybeans
 
@@ -41,3 +43,11 @@ endif
 filetype plugin indent on
 
 autocmd BufWritePre * :%s/\s\+$//e
+
+let g:rspec_command = "Dispatch rspec {spec}"
+
+" RSpec.vim mappings
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
