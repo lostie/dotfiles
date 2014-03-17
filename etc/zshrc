@@ -52,5 +52,9 @@ export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 export EDITOR=vim
 
+bindkey -e
+bindkey '^[[1;9C' forward-word
+bindkey '^[[1;9D' backward-word
+
 # Customize to your needs...
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
