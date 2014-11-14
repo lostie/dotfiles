@@ -30,7 +30,12 @@ export LSCOLORS=ExFxBxDxCxegedabagacad
 #export CFLAGS=-Qunused-arguments
 #export CPPFLAGS=-Qunused-arguments
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # This loads RVM into a shell session.
-PATH=$PATH:$HOME/.rvm/bin
+eval "$(rbenv init -)"
+
+# [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # This loads RVM into a shell session.
+# PATH=$PATH:$HOME/.rvm/bin
 
 export PATH=/usr/local/bin:/usr/local/sbin:/Users/smarques/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/share/npm/bin
+
+source /Users/smarques/projects/devtools/.source
+ssh-add /Users/smarques/projects/devtools/keys/* &> /dev/null

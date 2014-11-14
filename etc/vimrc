@@ -17,12 +17,20 @@ Bundle 'thoughtbot/vim-rspec'
 Bundle 'tpope/vim-dispatch'
 Bundle 'bling/vim-airline'
 Bundle 'kien/ctrlp.vim'
+Bundle 'jlanzarotta/bufexplorer'
+Bundle 'scrooloose/nerdtree'
+Bundle 'tpope/vim-rails'
+Bundle 'gcmt/wildfire.vim'
+Bundle 'bkad/CamelCaseMotion'
+Bundle 'edkolev/tmuxline.vim'
+Bundle 'rstacruz/sparkup'
+Bundle 'rking/ag.vim'
 
 colorscheme jellybeans
 
 syntax on
 set nocp
-set guifont=Monaco:h12
+" set guifont=Monaco:h12
 set number
 
 set nobackup
@@ -36,6 +44,9 @@ set softtabstop=2
 set shiftwidth=2
 set expandtab
 
+set laststatus=2
+set t_Co=256
+
 if has("gui_running")
 	set guioptions=egmrLt
 else
@@ -46,10 +57,19 @@ filetype plugin indent on
 
 autocmd BufWritePre * :%s/\s\+$//e
 
-let g:rspec_command = "Dispatch rspec {spec}"
+let g:rspec_command = "Dispatch bundle exec rspec {spec}"
 
 " RSpec.vim mappings
 map <Leader>t :call RunCurrentSpecFile()<CR>
 map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
+
+nmap <F2> :!/usr/local/Cellar/ctags/5.8/bin/ctags -R .<CR>
+
+" Airline settings
+let g:airline_powerline_fonts = 1
+" let g:airline_theme='badwolf'
+
+" CtrlP settings
+let g:ctrlp_cmd = 'CtrlPMRU'
