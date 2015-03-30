@@ -17,6 +17,18 @@ Bundle 'thoughtbot/vim-rspec'
 Bundle 'tpope/vim-dispatch'
 Bundle 'bling/vim-airline'
 Bundle 'kien/ctrlp.vim'
+Bundle 'jlanzarotta/bufexplorer'
+Bundle 'scrooloose/nerdtree'
+Bundle 'tpope/vim-rails'
+Bundle 'gcmt/wildfire.vim'
+Bundle 'bkad/CamelCaseMotion'
+Bundle 'edkolev/tmuxline.vim'
+Bundle 'rstacruz/sparkup'
+Bundle 'rking/ag.vim'
+Bundle 'scrooloose/syntastic'
+Bundle 'airblade/vim-gitgutter'
+Bundle 'tpope/vim-rake'
+" Bundle 'suan/vim-instant-markdown'
 
 colorscheme jellybeans
 
@@ -36,6 +48,11 @@ set softtabstop=2
 set shiftwidth=2
 set expandtab
 
+set laststatus=2
+set t_Co=256
+
+set wildmode=list:longest
+
 if has("gui_running")
 	set guioptions=egmrLt
 else
@@ -53,3 +70,24 @@ map <Leader>t :call RunCurrentSpecFile()<CR>
 map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
+
+" Builds tags for current directory
+nmap <F2> :!/usr/local/Cellar/ctags/5.8/bin/ctags -R .<CR>
+
+" Clears CtrlP cache
+nmap <F3> :CtrlPClearCache<CR>
+
+" Changing tabs
+nmap <Tab> :tabn<CR>
+nmap <S-Tab> :tabp<CR>
+
+"Ctags search always lists all occurrences
+nmap <C-]> g<C-]>
+
+" Airline settings
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+" let g:airline_theme='badwolf'
+
+" CtrlP settings
+" let g:ctrlp_cmd = 'CtrlPMRU'
