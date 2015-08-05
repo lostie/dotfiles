@@ -1,35 +1,37 @@
 set nocompatible               " be iMproved
 filetype off                   " required!
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
-Bundle 'gmarik/vundle'
-Bundle 'vim-ruby/vim-ruby'
-Bundle 'pix/vim-align'
-Bundle 'oscarh/vimerl'
-Bundle 'tpope/vim-fugitive'
-Bundle 'tomtom/tcomment_vim'
-Bundle 'nanotech/jellybeans.vim'
-Bundle 'dsawardekar/ember.vim'
-Bundle 'derekwyatt/vim-scala'
-Bundle 'thoughtbot/vim-rspec'
-Bundle 'tpope/vim-dispatch'
-Bundle 'bling/vim-airline'
-Bundle 'kien/ctrlp.vim'
-Bundle 'jlanzarotta/bufexplorer'
-Bundle 'scrooloose/nerdtree'
-Bundle 'tpope/vim-rails'
-Bundle 'gcmt/wildfire.vim'
-Bundle 'bkad/CamelCaseMotion'
-Bundle 'edkolev/tmuxline.vim'
-Bundle 'rstacruz/sparkup'
-Bundle 'rking/ag.vim'
-Bundle 'scrooloose/syntastic'
-Bundle 'airblade/vim-gitgutter'
-Bundle 'tpope/vim-rake'
-Bundle 'elixir-lang/vim-elixir'
-" Bundle 'suan/vim-instant-markdown'
+Plugin 'gmarik/Vundle.vim'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'pix/vim-align'
+Plugin 'oscarh/vimerl'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tomtom/tcomment_vim'
+Plugin 'nanotech/jellybeans.vim'
+Plugin 'dsawardekar/ember.vim'
+Plugin 'derekwyatt/vim-scala'
+Plugin 'thoughtbot/vim-rspec'
+Plugin 'tpope/vim-dispatch'
+Plugin 'bling/vim-airline'
+Plugin 'kien/ctrlp.vim'
+Plugin 'jlanzarotta/bufexplorer'
+Plugin 'scrooloose/nerdtree'
+Plugin 'tpope/vim-rails'
+Plugin 'gcmt/wildfire.vim'
+Plugin 'bkad/CamelCaseMotion'
+Plugin 'edkolev/tmuxline.vim'
+Plugin 'rstacruz/sparkup'
+Plugin 'rking/ag.vim'
+Plugin 'scrooloose/syntastic'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'tpope/vim-rake'
+Plugin 'elixir-lang/vim-elixir'
+" Plugin 'suan/vim-instant-markdown'
+
+call vundle#end()
 
 colorscheme jellybeans
 
