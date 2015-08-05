@@ -3,5 +3,6 @@ etc/vim/backups/*
 etc/vim/.netrwhist
 etc/vim/tmp
 etc/vim/bundle/Vundle.vim
+etc/vim/bundle/*
 *.swp
 *.swo
