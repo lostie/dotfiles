@@ -9,3 +9,6 @@ fi
 brew update
 brew upgrade
 brew bundle
+
+# Setup Vundle for vim
+git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
