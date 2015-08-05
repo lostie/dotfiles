@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if [[ -z $(which brew) ]]; then
+  echo 'Unable to find brew, please install it from http://brew.sh'
+  open 'http://brew.sh'
+  exit 1
+fi
+
+brew update
+brew upgrade
+brew bundle
