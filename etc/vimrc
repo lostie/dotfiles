@@ -28,6 +28,7 @@ Bundle 'rking/ag.vim'
 Bundle 'scrooloose/syntastic'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'tpope/vim-rake'
+Bundle 'elixir-lang/vim-elixir'
 " Bundle 'suan/vim-instant-markdown'
 
 colorscheme jellybeans
@@ -72,7 +73,8 @@ map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
 
 " Builds tags for current directory
-nmap <F2> :!/usr/local/Cellar/ctags/5.8/bin/ctags -R .<CR>
+" nmap <F2> :!/usr/local/Cellar/ctags/5.8/bin/ctags -R .<CR>
+nmap <F2> :!/usr/local/bin/ctags -R .<CR>
 
 " Clears CtrlP cache
 nmap <F3> :CtrlPClearCache<CR>
