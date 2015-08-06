@@ -1,4 +1,6 @@
+brew "ag"
 brew "docker"
+brew "docker-compose"
 brew "docker-machine"
 brew "docker-swarm"
 brew "dos2unix"
