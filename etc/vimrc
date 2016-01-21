@@ -76,14 +76,14 @@ map <Leader>a :call RunAllSpecs()<CR>
 
 " Builds tags for current directory
 " nmap <F2> :!/usr/local/Cellar/ctags/5.8/bin/ctags -R .<CR>
-nmap <F2> :!/usr/local/bin/ctags -R .<CR>
+nmap <F2> :!env ctags -R .<CR>
 
 " Clears CtrlP cache
 nmap <F3> :CtrlPClearCache<CR>
 
-" Changing tabs
-nmap <Tab> :tabn<CR>
-nmap <S-Tab> :tabp<CR>
+" Changing buffers
+nmap <Tab> :bn<CR>
+nmap <S-Tab> :bp<CR>
 
 "Ctags search always lists all occurrences
 nmap <C-]> g<C-]>
