@@ -24,7 +24,7 @@ Plugin 'gcmt/wildfire.vim'
 Plugin 'bkad/CamelCaseMotion'
 Plugin 'edkolev/tmuxline.vim'
 Plugin 'rstacruz/sparkup'
-Plugin 'rking/ag.vim'
+Plugin 'mileszs/ack.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-rake'
@@ -87,6 +87,11 @@ nmap <S-Tab> :bp<CR>
 
 "Ctags search always lists all occurrences
 nmap <C-]> g<C-]>
+
+" Ack settings
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
 
 " Airline settings
 let g:airline_powerline_fonts = 1
