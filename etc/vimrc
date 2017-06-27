@@ -13,6 +13,7 @@ Plugin 'tomtom/tcomment_vim'
 Plugin 'nanotech/jellybeans.vim'
 Plugin 'dsawardekar/ember.vim'
 Plugin 'derekwyatt/vim-scala'
+Plugin 'slim-template/vim-slim'
 Plugin 'thoughtbot/vim-rspec'
 Plugin 'tpope/vim-dispatch'
 Plugin 'bling/vim-airline'
@@ -29,6 +30,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-rake'
 Plugin 'elixir-lang/vim-elixir'
+Plugin 'tpope/vim-surround'
 " Plugin 'suan/vim-instant-markdown'
 
 call vundle#end()
@@ -55,6 +57,10 @@ set laststatus=2
 set t_Co=256
 
 set wildmode=list:longest
+
+" More time to trigger surround shortcuts
+set timeoutlen=3000
+set ttimeoutlen=1000
 
 if has("gui_running")
 	set guioptions=egmrLt
