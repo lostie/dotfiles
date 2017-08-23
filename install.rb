@@ -10,3 +10,6 @@ Dir['etc/*'].each do |file|
   puts "Linking #{File.expand_path file} to #{target}"
   puts `ln -svfh #{File.expand_path file} #{target}`
 end
+
+puts "Configuring git to use custom global ignore file"
+puts `git config --global core.excludesfile ~/.gitignore_global`
