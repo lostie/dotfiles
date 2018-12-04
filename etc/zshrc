@@ -50,6 +50,9 @@ source $ZSH/oh-my-zsh.sh
 alias vi="vim"
 alias ag="ag --path-to-ignore ~/.agignore"
 
+# GIT alias
+alias gch="git checkout"
+
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 export EDITOR=vim
